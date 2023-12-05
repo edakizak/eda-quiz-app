@@ -1,0 +1,16 @@
+.buttons {
+  background-color: var(--buttons-color);
+  color: var(--buttons-text-color);
+  padding: 8px 25px;
+  border-radius: 20px;
+  font-family: var(--font-family);
+  border: none;
+  margin: 4px;
+  transform: scale(1.2);
+  display: flex;
+  justify-content: center;
+}
+
+.buttons:hover {
+  background-color: var(--buttons-hover-color);
+}

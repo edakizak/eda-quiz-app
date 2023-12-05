@@ -13,9 +13,16 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+/* header
+@import url(/components/header.css); */
 header {
-  margin-bottom: 20px;
-  width: 60%;
+  width: 100%;
+  position: relative;
+  margin-bottom: 30px;
+}
+.heading {
+  position: absolute;
   align-self: center;
 }
 main {
@@ -38,6 +45,9 @@ nav {
   font-family: var(--font-family);
   width: 100%;
 }
+
+/* cards
+@import url(/components/card.css); */
 
 .cards {
   display: flex;
@@ -67,12 +77,44 @@ nav {
   font-family: var(--font-family);
   position: relative;
 }
+
+/* tags */
+.tags {
+  display: flex;
+  text-decoration: none;
+  margin-top: 12px;
+  justify-content: end;
+}
+.detail1 {
+  background-color: #d91ee7;
+  color: var(--buttons-text-color);
+  border-radius: 10px;
+  padding: 5px 5px;
+  margin: 5px;
+}
+.detail2 {
+  background-color: #07bc4f;
+  color: var(--buttons-text-color);
+  border-radius: 10px;
+  padding: 5px 5px;
+  margin: 5px;
+}
+.detail3 {
+  background-color: #fd9002;
+  color: var(--buttons-text-color);
+  border-radius: 10px;
+  padding: 5px 5px;
+  margin: 5px;
+}
 h1 {
   display: flex;
   justify-content: center;
   margin-top: 0px;
   margin-bottom: 10px;
 }
+
+/* buttons
+@import url(/components/button.css);*/
 
 .buttons {
   background-color: var(--buttons-color);
@@ -82,24 +124,43 @@ h1 {
   font-family: var(--font-family);
   border: none;
   margin: 4px;
+  transform: scale(1.2);
+  display: flex;
+  justify-content: center;
 }
 
 .buttons:hover {
   background-color: var(--buttons-hover-color);
 }
 
+/* badges */
+
 .badge {
   position: absolute;
   top: -8px;
   right: -4px;
+  background-color: inherit;
+  border: none;
 }
-.profile-badge {
+
+.badge:hover {
+  box-shadow: 0 8px 16px 0 var(--cards-hover-shadow-color);
+}
+.profile-container {
   position: relative;
   margin-top: 60px;
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
+  transform: scale(1.5);
 }
+
+h4 {
+  font-family: var(--font-family);
+}
+
+/* bottom navbar - footer */
+
 .navbar {
   background-color: var(--nav-background-color);
   bottom: 0;
@@ -107,11 +168,9 @@ h1 {
   padding: 8px;
   display: flex;
   justify-content: space-evenly;
-  bottom: 0;
   position: fixed;
   border-radius: 100px;
   margin-bottom: 20px;
-  margin-left: 0;
   align-self: center;
 }
 
@@ -126,4 +185,65 @@ h1 {
 .navbar-profile {
   background-color: inherit;
   border: none;
+}
+
+/* Toggle */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--buttons-hover-color);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #009c10;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #009c10;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }

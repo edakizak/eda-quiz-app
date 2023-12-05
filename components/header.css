@@ -1,0 +1,29 @@
+header {
+  width: 100%;
+  position: relative;
+  margin-bottom: 30px;
+}
+.heading {
+  position: absolute;
+  align-self: center;
+}
+main {
+  justify-content: center;
+  margin-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  width: 60%;
+  align-self: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  min-height: 8vh;
+  background-color: var(--nav-background-color);
+  color: rgb(255, 255, 255);
+  font-family: var(--font-family);
+  width: 100%;
+}

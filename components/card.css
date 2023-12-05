@@ -1,0 +1,28 @@
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: inset;
+  background-color: var(--cards-background-color);
+  border-radius: 20px;
+  margin-top: 10px;
+  padding: 20px;
+  font-family: var(--font-family);
+  position: relative;
+}
+.cards:hover {
+  box-shadow: 0 8px 16px 0 var(--cards-hover-shadow-color);
+}
+
+.profile-cards {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: inset;
+  background-color: var(--cards-background-color);
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 20px;
+  font-family: var(--font-family);
+  position: relative;
+}
