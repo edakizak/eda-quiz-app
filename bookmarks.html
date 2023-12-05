@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <title>eda quiz app</title>
+    <title>bookmarks</title>
   </head>
-
   <body>
     <header>
       <nav>
@@ -17,8 +16,7 @@
       </nav>
     </header>
     <main>
-      <section>
-        <div class="cards">
+      <section class="cards">
           <article class="card1">
             <h2>Q: What does CSS stand for?</h2>
             <button class="buttons" type="button">show answer</button>
@@ -26,20 +24,8 @@
               <img src="/images/icons8-ribbon-26.png" alt="Badge" />
             </div>
           </article>
-        </div>
       </section>
-      <section class="cards">
-        <article class="card2">
-          <h2>
-            Q: Which HTML tag is used to link an external CSS file to an HTML
-            document?
-          </h2>
-          <button class="buttons" type="button">show answer</button>
-          <div class="badge">
-            <img src="/images/icons8-bookmark-24.png" alt="Badge" />
-          </div>
-        </article>
-      </section>
+      
       <section class="cards">
         <article class="card3">
           <h2>
@@ -52,30 +38,25 @@
           </div>
         </article>
       </section>
-      <section class="cards">
-        <article class="card4">
-          <h2>
-            Q: Which HTML tag is used to link an external CSS file to an HTML
-            document?
-          </h2>
-          <button class="buttons" type="button">show answer</button>
-          <div class="badge">
-            <img src="/images/icons8-bookmark-24.png" alt="Badge" />
-          </div>
-        </article>
-      </section>
+      
     </main>
   </body>
 
   <div class="navbar">
     <button class="navbar-homepage">
-      <img src="/images/icons8-homepage-50 (2).png" alt="homepage" />
+    <a href="index.html" alt="homepage">
+        <img src="/images/icons8-homepage-50 (2).png" alt="homepage" />
+    </a>
     </button>
     <button class="navbar-saved">
-      <img src="/images/icons8-bookmark-50.png" alt="saved" />
+    <a href="bookmarks.html" alt="saved">
+       <img src="/images/icons8-bookmark-50.png" alt="saved" />
+    </a>
     </button>
     <button class="navbar-profile">
+    <a href="profile.html" alt="profile">
       <img src="/images/icons8-user-50.png" alt="profile" />
     </button>
+    </a>
   </div>
 </html>
