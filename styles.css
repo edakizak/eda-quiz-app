@@ -76,8 +76,18 @@ nav {
   padding: 20px;
   font-family: var(--font-family);
   position: relative;
+  text-align: center;
 }
 
+.profile-container {
+  display: flex;
+}
+
+/* text */
+
+.profile-text {
+  text-align: center;
+}
 /* tags */
 .tags {
   display: flex;
@@ -133,6 +143,20 @@ h1 {
   background-color: var(--buttons-hover-color);
 }
 
+.button__icon {
+  background-color: none;
+}
+
+.counter_button {
+  background-color: inherit;
+  border: none;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.counter_button:hover {
+  box-shadow: 0 8px 16px 0 var(--cards-hover-shadow-color);
+}
 /* badges */
 
 .badge {
@@ -153,10 +177,13 @@ h1 {
   display: flex;
   justify-content: center;
   transform: scale(1.5);
+  align-self: center;
 }
 
 h4 {
   font-family: var(--font-family);
+  margin: 30px;
+  align-self: baseline;
 }
 
 /* bottom navbar - footer */
@@ -194,6 +221,8 @@ h4 {
   display: inline-block;
   width: 60px;
   height: 34px;
+  align-self: center;
+  margin-top: 10px;
 }
 
 .switch input {
