@@ -159,17 +159,19 @@ h1 {
 }
 /* badges */
 
-.badge {
+.bookmark-badge {
   position: absolute;
   top: -8px;
   right: -4px;
   background-color: inherit;
   border: none;
+  background-image: url(./images/icons8-bookmark-50.png);
 }
 
-.badge:hover {
+.bookmark-badge:hover {
   box-shadow: 0 8px 16px 0 var(--cards-hover-shadow-color);
 }
+
 .profile-container {
   position: relative;
   margin-top: 60px;
@@ -178,6 +180,7 @@ h1 {
   justify-content: center;
   transform: scale(1.5);
   align-self: center;
+  background-image: url(images/icons8-cat-profile-90.png);
 }
 
 h4 {
