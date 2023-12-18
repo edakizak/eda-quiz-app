@@ -88,6 +88,30 @@ nav {
 .profile-text {
   text-align: center;
 }
+
+/*forms*/
+.form {
+  font-family: var(--font-family);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.submit-button {
+  margin-top: 20px;
+  align-self: flex-end;
+  background-color: var(--buttons-color);
+  color: var(--buttons-text-color);
+  padding: 8px 25px;
+  border-radius: 20px;
+  font-family: var(--font-family);
+  border: none;
+}
+
+.submit-button:hover {
+  background-color: var(--buttons-hover-color);
+  transition: background-color 500ms;
+}
 /* tags */
 .tags {
   display: flex;
@@ -166,10 +190,18 @@ h1 {
   right: -4px;
   background-color: inherit;
   border: none;
+  background-image: url(./images/icons8-bookmark-24.png);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
 }
 
 .bookmark-badge:hover {
-  box-shadow: 0 8px 16px 0 var(--cards-hover-shadow-color);
+  transform: scale(1.1);
+}
+
+.toggle {
+  background-image: url(./images/icons8-ribbon-26.png);
 }
 
 .profile-container {
