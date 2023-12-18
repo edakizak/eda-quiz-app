@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <title>homepage</title>
+    <script src="/index.js" defer></script>
   </head>
 
   <header>
@@ -15,19 +16,17 @@
       </div>
     </nav>
   </header>
-
   <body>
-
     <main>
       <section class="cards">
           <article class="card1">
             <h2>Q: What does CSS stand for?</h2>
             <button class="buttons" type="button">show answer</button>
-            <div class="badge">
-              <img src="/images/icons8-ribbon-26.png" alt="Badge" />
+            <div id="bookmark-badge" class="bookmark-badge">
+              <img src="./images/icons8-bookmark-24.png" alt="Badge" />
             </div>
            <a class="tags">
-            <div class="detail1">#initial </div>
+            <div class="detail1">#html </div>
             <div class="detail2">#flexbox </div>
             <div class="detail3">#css </div>
            </a>
@@ -40,8 +39,8 @@
             document?
           </h2>
           <button class="buttons" type="button">show answer</button>
-          <div class="badge">
-            <img src="/images/icons8-bookmark-24.png" alt="Badge" />
+          <div id="bookmark-badge" class="bookmark-badge">
+            <img src="./images/icons8-bookmark-24.png" alt="Badge" />
           </div>
           <a class="tags">
             <div class="detail1">#html </div>
@@ -55,12 +54,12 @@
             Q: What is the default display property for most HTML elements?
           </h2>
           <button class="buttons" aria-label="button">show answer</button>
-          <div class="badge">
-            <img src="/images/icons8-ribbon-26.png" alt="Badge" />
+          <div id="bookmark-badge" class="bookmark-badge">
+            <img src="./images/icons8-bookmark-24.png"alt="Badge" />
           </div>
           <a class="tags">
             <div class="detail3">#css </div>
-            <div class="detail1">#initial </div>
+            <div class="detail1">#html </div>
             <div class="detail2">#flexbox </div>
            </a>
         </article>
@@ -71,13 +70,13 @@
             Q: How can you center an element horizontally in CSS?
           </h2>
           <button class="buttons" type="button">show answer</button>
-          <div class="badge">
-            <img src="/images/icons8-bookmark-24.png" alt="Badge" />
+          <div id="bookmark-badge" class="bookmark-badge">
+            <img src="./images/icons8-bookmark-24.png" alt="Badge" />
           </div>
           <a class="tags">
             <div class="detail2">#flexbox </div>
             <div class="detail3">#css </div>
-            <div class="detail1">#initial </div>
+            <div class="detail1">#html </div>
            </a>
         </article>
       </section>
@@ -87,17 +86,22 @@
   <div class="navbar">
     <button class="navbar-homepage">
     <a href="index.html" alt="homepage">
-        <img src="/images/purple-homepage-50.png" alt="homepage" />
+        <img src="./images/purple-homepage-50.png" alt="homepage" width="30" />
     </a>
     </button>
     <button class="navbar-saved">
     <a href="bookmarks.html" alt="saved">
-       <img src="/images/icons8-bookmark-50.png" alt="saved" />
+       <img src="./images/icons8-bookmark-50.png" alt="saved" width="30"/>
     </a>
+    </button>
+    <button class="navbar-form">
+      <a href="form.html" alt="form">
+        <img src="./images/white-add-50.png" alt="form" width="30"/>
+      </a>
     </button>
     <button class="navbar-profile">
     <a href="profile.html" alt="profile">
-      <img src="/images/user-50 .png" alt="profile" />
+      <img src="./images/user-50 .png" alt="profile" width="30" />
     </button>
     </a>
   </div>
