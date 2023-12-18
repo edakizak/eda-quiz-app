@@ -141,6 +141,7 @@ h1 {
 
 .buttons:hover {
   background-color: var(--buttons-hover-color);
+  transition: background-color 500ms;
 }
 
 .button__icon {
@@ -159,7 +160,7 @@ h1 {
 }
 /* badges */
 
-.badge {
+.bookmark-badge {
   position: absolute;
   top: -8px;
   right: -4px;
@@ -167,9 +168,10 @@ h1 {
   border: none;
 }
 
-.badge:hover {
+.bookmark-badge:hover {
   box-shadow: 0 8px 16px 0 var(--cards-hover-shadow-color);
 }
+
 .profile-container {
   position: relative;
   margin-top: 60px;
@@ -210,6 +212,10 @@ h4 {
   border: none;
 }
 .navbar-profile {
+  background-color: inherit;
+  border: none;
+}
+.navbar-form {
   background-color: inherit;
   border: none;
 }
